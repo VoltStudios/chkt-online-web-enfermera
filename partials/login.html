@@ -1,0 +1,34 @@
+<div class="container-fluid" id="login-container">
+	<div class="row">
+			<div class="col-xs-12 text-center">
+				<div class="chkt-logo text-center">
+	  			<h1>#CHKT</h1>
+	  			<h2>En línea</h2>
+				</div>
+			</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			<form novalidate>
+				<div class="form-text-field">
+					<label for="curp"><i class="material-icons">account_circle</i></label>
+					<input type="text" placeholder="curp" ng-model="login.curp">
+				</div>
+				<div class="form-text-field">
+					<label for="curp"><i class="material-icons">lock</i></label>
+					<input type="password" placeholder="Contraseña" ng-model="login.password">
+				</div>
+				<a href="/contrasenaolvidada" id="forgotten-password-link">¿Olvidó su Contraseña?</a>
+				<div class="text-center">
+					<input type="submit" value="Iniciar Sesión" ng-click="login.login()">
+				</div>
+			</form>
+		</div>
+  </div>
+  <div class="row" id="registrarse-call">
+    <h4 class="text-center">¿Eres un nuevo usuario?</h4>
+    <a href="/registrarse">
+        <h2 class="text-center">Registrarse</h2>
+    </a>
+  </div>
+</div>

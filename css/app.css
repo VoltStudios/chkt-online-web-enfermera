@@ -1,0 +1,132 @@
+chkt-footer #footer {
+  background: #A8CE80;
+  font-size: 1.5em;
+  height: 3.3em;
+  margin-top: -3.3em;
+  padding-top: 0.166666667em;
+  padding-bottom: 0.166666667em; }
+  chkt-footer #footer i {
+    font-size: 1.5em; }
+  chkt-footer #footer a.activo {
+    color: #FFFFFF; }
+  chkt-footer #footer a.inactivo {
+    color: #689951; }
+
+chkt-header #header {
+  background: #A8CE80;
+  color: #FFFFFF;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em; }
+  chkt-header #header a {
+    color: #FFFFFF; }
+  chkt-header #header #top-logo {
+    font-size: 2em;
+    text-transform: uppercase; }
+
+body {
+  height: 100%; }
+
+html {
+  height: 100%; }
+
+i.boton-grande {
+  color: #A8CE80;
+  font-size: 3em; }
+
+#content {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#login-container {
+  background: url("/images/login_background.png");
+  color: #FFFFFF;
+  height: 100%;
+  padding-top: 3em;
+  text-transform: uppercase; }
+  #login-container a {
+    color: #FFFFFF; }
+  #login-container form input[type="submit"] {
+    background: none;
+    border: solid 2px #FFFFFF;
+    border-radius: 3px;
+    font-size: 2em;
+    margin-top: 1em;
+    padding: 0 1em;
+    text-transform: uppercase; }
+  #login-container .form-text-field {
+    border-bottom: solid 1px #FFFFFF;
+    font-size: 2em;
+    margin-bottom: 1em; }
+    #login-container .form-text-field i {
+      font-size: 2em; }
+    #login-container .form-text-field input:not([type=submit]):not([type=file]) {
+      background: none;
+      border: none; }
+    #login-container .form-text-field label {
+      margin-bottom: 0px; }
+    #login-container .form-text-field ::-webkit-input-placeholder {
+      color: #FFFFFF;
+      text-transform: uppercase; }
+    #login-container .form-text-field :-moz-placeholder {
+      color: #FFFFFF;
+      opacity: 1;
+      text-transform: uppercase; }
+    #login-container .form-text-field ::-moz-placeholder {
+      color: #FFFFFF;
+      opacity: 1;
+      text-transform: uppercase; }
+    #login-container .form-text-field :-ms-input-placeholder {
+      color: #FFFFFF;
+      text-transform: uppercase; }
+    #login-container .form-text-field :placeholder-shown {
+      color: #FFFFFF;
+      text-transform: uppercase; }
+
+#paciente-container h2 {
+  color: #A8CE80; }
+
+#pacientes-container a#agregar-paciente {
+  color: #A8CE80;
+  text-transform: uppercase;
+  margin-bottom: 2em; }
+
+#pacientes-container i {
+  color: #E3E3E3;
+  font-size: 3em; }
+
+#pacientes-container input[type=text] {
+  border: solid 1px #E3E3E3;
+  border-radius: 4px;
+  color: #E3E3E3;
+  box-shadow: none;
+  min-width: 20em;
+  padding-left: 1em; }
+
+#pacientes-container #busqueda {
+  margin-bottom: 3em; }
+
+#pacientes-container #directorio {
+  border-top: solid 1px #E3E3E3;
+  margin-top: 3em;
+  padding-top: 2em; }
+
+#pacientes-container .paciente {
+  cursor: pointer; }
+  #pacientes-container .paciente:hover {
+    text-decoration: underline; }
+
+.content-container {
+  height: 100%; }
+
+.punto {
+  background: #A8CE80;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1em;
+  width: 1em; }
+  .punto.chico {
+    height: 0.5em;
+    width: 0.5em;
+    margin-bottom: 0.25em; }

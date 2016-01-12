@@ -1,0 +1,35 @@
+<div class="container-fluid content-container" id="pacientes-container">
+	<chkt-header></chkt-header>
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2" id="busqueda">
+			<a href="/agregarpaciente" id="agregar-paciente">+ Agregar paciente</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<input type="text" id="pacientes-text" placeholder="Buscar paciente" ng-model="pacientes.busqueda">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2" id="directorio">
+			<div class="row" ng-repeat="user in pacientes.users | filter:pacientes.busqueda">
+				<div class="col-xs-1 col-xs-offset-1">
+					<i class="fa fa-user"></i>
+				</div>
+				<a href="/paciente/{{ user.id }}">
+					<div class="col-xs-7 paciente">
+						<p>{{ user.nombre + " " + user.apaterno + " " + user.amaterno }}</p>
+					</div>
+				</a>
+				<div class="col-xs-1">
+					<div class="punto"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<chkt-footer></chkt-footer>

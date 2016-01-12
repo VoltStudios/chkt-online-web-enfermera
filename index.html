@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chktAppEnfermera">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <base href="/">
+
+    <title>CHKT En Linea - Enfermera</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body ng-controller="MainController as main">
+  	
+    <div id="content" ng-view></div>
+
+    <script src="/js/controllers/main_ctrl.js"></script>
+    <script src="/js/controllers/login_ctrl.js"></script>
+    <script src="/js/controllers/pacientes_ctrl.js"></script>
+    <script src="/js/controllers/paciente_ctrl.js"></script>
+
+    <script src="/js/services/user.js"></script>
+
+    <script src="/js/directives/header.js"></script>
+    <script src="/js/directives/footer.js"></script>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

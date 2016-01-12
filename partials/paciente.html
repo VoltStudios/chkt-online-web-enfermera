@@ -1,0 +1,49 @@
+<div class="container-fluid content-container" id="paciente-container">
+	<chkt-header></chkt-header>
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="row">
+				<div class="col-sm-8">
+					<h2>{{ paciente.nombre }} <div class="punto chico"></div></h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<i class="fa fa-envelope boton-grande"></i>
+		</div>
+	</div>
+	<div class="row">
+		<p><span class="primary">Edad: </span></p>
+		<p><span class="primary">Fuma: </span></p>
+		<p><span class="primary">Bebe: </span></p>
+		<p><span class="primary">Actividad: </span></p>
+		<p><span class="primary">Presión Arterial: </span></p>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<input type="text" id="pacientes-text" placeholder="Buscar paciente" ng-model="pacientes.busqueda">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2" id="directorio">
+			<div class="row" ng-repeat="user in pacientes.users | filter:pacientes.busqueda">
+				<div class="col-xs-1 col-xs-offset-1">
+					<i class="fa fa-user"></i>
+				</div>
+				<a href="/paciente/{{ user.id }}">
+					<div class="col-xs-7 paciente">
+						<p>{{ user.nombre + " " + user.apaterno + " " + user.amaterno }}</p>
+					</div>
+				</a>
+				<div class="col-xs-1">
+					<div class="punto"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<chkt-footer></chkt-footer>
